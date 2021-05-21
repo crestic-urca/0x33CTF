@@ -1,0 +1,13 @@
+## Commande pour créer l'image docker du ctf open source :  
+docker build -t ctfopensource:1.00 .  
+
+## Commande pour lancer l'image du ctf open source dans un conteneur et d'un conteneur mysql  
+docker compose-up  
+
+## le site fonctionne avec docker compose, il faut juste faire :  
+docker exec -ti projetctf_ctfopensource_1 bash  
+dans le bash => php artisan migrate  
+
+##TODO :
+créer un point d'entré pour les commandes de php artisan (sûrement mal dit)
+ajout de phpmyadmin ??

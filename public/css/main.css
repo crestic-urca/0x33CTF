@@ -1,0 +1,104 @@
+html, body{
+	margin: 0 !important;
+	padding : 0 !important;
+}
+
+body{
+	background-color: #22272f;
+	color: #fff;
+  font-family:  Roboto, sans-serif, BlinkMacSystemFont, "Segoe UI", Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  /*letter-spacing: 500px;*/
+}
+
+.c3 .c3-axis-x path, .c3 .c3-axis-x line,
+.c3 .c3-axis-y path, .c3 .c3-axis-y line {
+  stroke: #aaa;
+}
+.c3-axis-y text,
+.c3-axis-x text,
+.c3-legend-item text{
+  fill: #aaa;
+  font-size:12px;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+    
+#toast-container {
+  text-align: center;
+  width: auto;
+  position: absolute !important;
+  top: 64px !important;
+  right: 10% !important;
+  bottom: auto !important;
+  left: 10% !important;  
+  margin: 0 auto !important;
+}
+
+.sidenav{
+  background-color: #22272f;
+  color: #fff;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+.flex > *{
+  margin-left: 0 !important;
+  margin-bottom: 20px;
+}
+
+nav.clean, nav.clean *{
+  background: none;
+  box-shadow: none;
+}
+
+nav.clean .breadcrumb{
+  color: #fff;
+}
+
+nav.clean .breadcrumb.active{
+  color: #aaa;
+}
+
+
+.modal.datepicker-modal, .modal.timepicker-modal{
+  background-color: #37474f;
+}
+
+code{
+  background-color:grey;
+  border-radius: 3px;
+}
+
+pre{
+  border: 1px dashed black;
+  background-color:rgba(128, 128, 128, 0.349);
+  padding: 5px;
+}
+
+pre > code{
+  background: none;
+}
+
+#chart{
+  
+  margin: 0 5%;
+  
+  min-width: 500px;
+  border-radius: 10px !important;
+  margin-bottom: 20px;
+
+}
+
+.text-color-white{color:white;}
