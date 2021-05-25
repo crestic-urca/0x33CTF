@@ -46,7 +46,7 @@ RUN composer dump-autoload --optimize \
  && cp .env.docker .env \
  && touch database/database.sqlite \
  && chown www-data:www-data database/database.sqlite
-
+ #remplissage de la BDD
 RUN php artisan key:generate
 RUN php artisan migrate:fresh
 RUN php artisan db:seed

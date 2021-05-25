@@ -31,7 +31,7 @@
 
             {!! Form::open(['route' => 'teams.index', 'method' => 'GET']) !!}
                 <div class="input-field {!! $errors->has('name') ? 'red' : '' !!}">
-                        {!! Form::text('name', (request()->name ?? ''), [ 'id' => 'name', 'class' => 'validate' ]) !!}
+                        {!! Form::text('name', (request()->name ?? ''), [ 'id' => 'name', 'class' => 'validate text-color-white' ]) !!}
                         {!! Form::label('name', "Name of the team") !!}
                         {!! $errors->first('name', '<small class="help-block">:message</small>') !!}
                 </div>
@@ -59,7 +59,7 @@
                     {{ $teams->appends(request()->except('page'))->links() }}
                 </div>
             @else
-                <div class="center">No team found for "<b>{{(request()->name ?? '')}}</b>"</div>
+                <div class='center'>No team found for " <b>{{(request()->name ?? '')}}</b> "</div> 
             @endif
         </div>	<!-- /container -->
 
