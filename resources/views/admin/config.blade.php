@@ -1,6 +1,11 @@
 @extends('template')
 
 @section('contenu')
+<!--
+    bug : 
+        * insertion du nombre de personne par team accéssible qu'en allant sur la case avec TAB, mais modification du chiffre disponible avec les flèches de la case
+            correction : il suffit de cliquer sur la barre de la case
+-->
 
     <!-- Header -->
     <div class="parallax-container valign-wrapper" style="height: 150px">

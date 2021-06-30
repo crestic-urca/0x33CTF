@@ -56,7 +56,7 @@
                     <div class="card-title">Create a new category</div>
                     {!! Form::open(['route' => 'category.store']) !!}
                         <div class="input-field {!! $errors->has('nom_categorie') ? 'has-error' : '' !!}">
-                                {!! Form::text('nom_categorie', null, [ 'id' => 'nom_categorie', 'class' => 'validate']) !!}
+                                {!! Form::text('nom_categorie', null, [ 'id' => 'nom_categorie', 'class' => 'validate text-color-white']) !!}
                                 {!! Form::label('nom_categorie', "Name of the categorie", ['class' => 'text-color-white']) !!}
                                 {!! $errors->first('nom_categorie', '<small class="help-block">:message</small>') !!}
                         </div>

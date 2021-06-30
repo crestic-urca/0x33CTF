@@ -1,5 +1,9 @@
 @extends('template')
 @section('contenu')
+<!--
+    bug : 
+        * lorsque la description est vide, produit un bug mais que la config est remplie
+-->
 
 
 	<!-- Header -->

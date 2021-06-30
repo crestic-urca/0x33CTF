@@ -34,13 +34,6 @@
                 <div class="card-content center-align">
                     <div class="center"><i class="fas fa-info-circle fa-5x"></i></div>
                     <h6 class="center">CTF Informations</h6>
-                        <?php   //vérification de la création de la config
-                            if( $config != NULL){}
-                            else{
-                                header("Location: /admin/config");
-                                exit(0);
-                            }
-                        ?>
                         <div><span>CTF start at : <b>{{ $config->date_start }}</b> </span></div>
                         <div><span>CTF end at : <b>{{ $config->date_end }}</b> </span></div>
 

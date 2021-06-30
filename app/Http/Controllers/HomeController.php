@@ -53,6 +53,12 @@ class HomeController extends Controller
 
         $config = CtfConfig::first();
 
+        //verification de la création de la config
+        if($config != NULL){}
+        else{
+            return redirect('admin/config');
+        }
+
         return view('home',compact('nb_player','nb_creator','nb_admin','nb_subject','nb_categories','nb_resolve_chall','nb_teams','config'));
     }
 }

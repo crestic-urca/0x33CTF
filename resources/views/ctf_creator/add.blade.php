@@ -38,36 +38,36 @@
                         @csrf
                         <div class="text-color-white input-field {!! $errors->has('titre') ? 'has-error' : '' !!}">
                                 <i class="material-icons prefix">create</i>
-                                {!! Form::text('titre', null, ['id'=>'titre','class' => 'validate']) !!}
+                                {!! Form::text('titre', null, ['id'=>'titre','class' => 'validate text-color-white']) !!}
                                 {!! Form::label('titre', "Title") !!}
                                 {!! $errors->first('titre', '<small class="help-block">:message</small>') !!}
                         </div>
                         <div class="text-color-white input-field {!! $errors->has('enonce') ? 'has-error' : '' !!}">
                                 <i class="material-icons prefix">format_align_left</i>
-                                {!! Form::textarea('enonce', null, ['id' => 'enonce','class' => '', 'data-length' => '60000', 'style' => 'border: 1px solid white; resize: vertical']) !!}
+                                {!! Form::textarea('enonce', null, ['id' => 'enonce','class' => 'text-color-white', 'data-length' => '60000', 'style' => 'border: 1px solid white; resize: vertical']) !!}
                                 {!! Form::label('enonce', "Subject") !!}
                                 {!! $errors->first('enonce', '<small class="help-block">:message</small>') !!}
                         </div>
                         <div class="text-color-white input-field {!! $errors->has('flag') ? 'has-error' : '' !!}">
                                 <i class="material-icons prefix">flag</i>
-                                {!! Form::text('flag', null, ['id' => 'flag','class' => 'validate']) !!}
+                                {!! Form::text('flag', null, ['id' => 'flag','class' => 'validate text-color-white']) !!}
                                 {!! Form::label('flag', "Flag") !!}
                                 {!! $errors->first('flag', '<small class="help-block">:message</small>') !!}
                         </div>
                         <div class="text-color-white input-field {!! $errors->has('nb_try') ? 'has-error' : '' !!}">
                             <i class="material-icons prefix">lock</i>
-                            {!! Form::number('nb_try', null, ['id' => 'nb_try','class' => 'validate']) !!}
+                            {!! Form::number('nb_try', null, ['id' => 'nb_try','class' => 'validate text-color-white']) !!}
                             {!! Form::label('nb_try', "Number of try") !!}
                             {!! $errors->first('nb_try', '<small class="help-block">:message</small>') !!}
                         </div>
                         <div class="text-color-white input-field {!! $errors->has('categorie_id') ? 'has-error' : '' !!}">
                                 <i class="material-icons prefix">reorder</i>
-                                {!! Form::select('categorie_id', $categories, null, ['id'=>'categorie_id','class' => '']) !!}
+                                {!! Form::select('categorie_id', $categories, null, ['id'=>'categorie_id','class' => 'text-color-white']) !!}
                                 {!! $errors->first('categorie_id', '<small class="help-block">:message</small>') !!}
                         </div>
                         <div class="text-color-white input-field {!! $errors->has('nb_points') ? 'has-error' : '' !!}">
                             <i class="material-icons prefix">emoji_events</i>
-                            {!! Form::number('nb_points', null, ['id' => 'nb_points','class' => 'validate']) !!}
+                            {!! Form::number('nb_points', null, ['id' => 'nb_points','class' => 'validate text-color-white']) !!}
                             {!! Form::label('nb_points', "Number of points") !!}
                             {!! $errors->first('nb_points', '<small class="help-block">:message</small>') !!}
                         </div>
